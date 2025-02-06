@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عماله</title>
+    <style>
+        /* نفس الستايلات الأصلية تمامًا */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            color: #fff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            animation: bounce 2s infinite;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .text {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .shadow-text {
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .btn {
+            background: #1b5e20;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transform-origin: center;
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #fff;
+        }
+
+        @keyframes rotate-btn {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animated-btn {
+            animation: rotate-btn 2s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .text {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .section {
+                animation: fade-in 1s ease-in-out;
+            }
+
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                animation: pulse 1.5s infinite;
+            }
+
+            @keyframes pulse {
+                0%, 100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+            }
+
+            .shadow-text {
+                text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+                animation: shake 1.5s infinite;
+            }
+
+            @keyframes shake {
+                0%, 100% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-5px);
+                }
+                75% {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="section1">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXTvGM7vpnpH5OCb-M0ljH0kIHBAy6UuIhTxX9dQKObtpUVeL1ME0WVoezp5pVuxIBCXgwihlWdcRsZQSziGtX7y9ecB1dqLrd4gaKZDL69jLtS_4GhhFKJGhPO47HBpm-5C833GIMITbtWymiWR1fC7-1wH9HG8Xxr2kBB1EQWM0ruWgJgEYNXrpTwwiJ/s320/%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84.png" 
+            alt="Logo" class="logo">
+        <h1 class="text">مرحبا بكم</h1>
+    </div>
+
+    <div class="section" id="section2">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8kpz_qe2iASVkp2zRLp6qJEkHiUmKSXcx8VXUPpApC3CCAb23fNCtVqRRWeSih-CCAMgMUPQA0mNv3sJgfgJqt28Wp4Q1udCxTj-w2macQ5xldcRrwe7z2B9K1JEOBOWiJoTPGMgKxBFBaLYX0QSNwn-ldVtpjHKXpqHhSL1uYOGfn94aLt_qfwgerTB7/s320/IMG-20250206-WA0004.jpg" 
+            alt="Next Logo" class="logo">
+        <p class="text">لا تدع مشروعك يتوقف</p>
+    </div>
+
+    <div class="section" id="section3">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw8pdAJlhSBz3gmMWfpe9GBlseSqlTbLOnlFaSkjh6kyuo-xrFZfYHwTbybCsTXr-ux2G_GSmuEdW0YtfqSbwrWE8eg7zPow5jGyChLMqCc5cfuUwfwZ_Sg0ZYOkCjzXevKaAWGqXep_M7KZSiEi8gnxtmw2MkSGu_h9lOTj-CH1hB2HeMd-g5BeDTgx7V/s1280/IMG-20250206-WA0005.jpg" 
+            alt="Specialties Logo" class="logo">
+        <p class="text">جميع التخصصات من مختلف الجنسيات</p>
+    </div>
+
+    <div class="section" id="section4">
+        <p class="text shadow-text">للتواصل معنا</p>
+        
+        <!-- الزر المعدل -->
+        <button id="contact-btn" class="btn" onclick="handleSmartContact()">
+            <span class="btn-text">تفاصيل الاتصال</span>
+            <span class="btn-icon">&#9742;</span>
+        </button>
+    </div>
+
+    <script>
+        // دالة محمية للتعامل مع الاتصال
+        function handleSmartContact() {
+            // تجميع الرقم بشكل ديناميكي
+            const numberParts = ['+968', '71', '333', '396'];
+            const fullNumber = numberParts.join('');
+            
+            // نسخ الرقم تلقائيًا
+            navigator.clipboard.writeText(fullNumber)
+                .then(() => {
+                    showConfirmation();
+                    redirectToChat();
+                })
+                .catch(err => console.error('Failed to copy!', err));
+        }
+
+        function showConfirmation() {
+            const confirmDiv = document.createElement('div');
+            confirmDiv.textContent = '✓ تم تفعيل خدمة المراسلة';
+            confirmDiv.style.position = 'fixed';
+            confirmDiv.style.bottom = '20px';
+            confirmDiv.style.left = '50%';
+            confirmDiv.style.transform = 'translateX(-50%)';
+            confirmDiv.style.background = 'rgba(0, 0, 0, 0.7)';
+            confirmDiv.style.color = 'white';
+            confirmDiv.style.padding = '8px 16px';
+            confirmDiv.style.borderRadius = '20px';
+            confirmDiv.style.zIndex = '1000';
+            document.body.appendChild(confirmDiv);
+
+            setTimeout(() => {
+                document.body.removeChild(confirmDiv);
+            }, 2000);
+        }
+
+        function redirectToChat() {
+            // توجيه خفي بعد تأخير
+            setTimeout(() => {
+                window.location.href = `tel:${fullNumber}`; // سيحاول فتح تطبيق المكالمات
+                
+                // نسخ احتياطي إذا لم يعمل التوجيه الأول
+                setTimeout(() => {
+                    window.open(`https://api.whatsapp.com/send?phone=${fullNumber}`, '_blank');
+                }, 500);
+            }, 2500);
+        }
+
+        // تعديل السكريبت الأصلي لإزالة الإشارة للزر
+        document.addEventListener("DOMContentLoaded", () => {
+            let currentSection = 1;
+            const totalSections = 4;
+
+            const scrollInterval = setInterval(() => {
+                if (currentSection > totalSections) {
+                    clearInterval(scrollInterval);
+                    return;
+                }
+                document.getElementById(`section${currentSection}`).scrollIntoView({ behavior: "smooth" });
+                currentSection++;
+            }, 3000);
+        });
+    </script>
+
+    <style>
+        /* إضافة ستايلات جديدة فقط لهذا الجزء */
+        .btn-text {
+            margin-right: 8px;
+        }
+
+        .btn-icon {
+            font-size: 1.4rem;
+            transition: transform 0.3s ease;
+        }
+
+        #contact-btn:hover .btn-icon {
+            transform: rotate(360deg);
+        }
+    </style>
+</body>
+</html>
